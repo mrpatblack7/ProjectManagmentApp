@@ -1,5 +1,5 @@
-#Project Management App
-#Created by Pat Black
+# Project Management App
+Created by Pat Black
 
 
 
