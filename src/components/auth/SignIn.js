@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 
-class signIn extends Component {
+class SignIn extends Component {
     state = {
-
+        email: " ",
+        password: " "
     }
-    handlChange = (e) => {
-        console.log(e);
+    handlChange = (capturingChangeAction) => {
+        this.setState({
+            [capturingChangeAction.target.id]: capturingChangeAction.target.value
+        })
     }
-    handleSubmit = (e) => {
-
+    handleSubmit = (capturingChangeAction) => {
+        capturingChangeAction.preventDefault();
+        console.log(this.state)
     }
     render() {
         return (
@@ -35,4 +39,4 @@ class signIn extends Component {
     }
 }
 
-export default signIn
+export default SignIn
